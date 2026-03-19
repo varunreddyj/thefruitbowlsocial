@@ -1,5 +1,5 @@
+// index.html
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,13 +15,14 @@
 <header>
   <h1>The Fruit Bowl Social</h1>
   <p>Fresh Fruit Bowls & Cold Pressed Juices</p>
+  <p class="coming-soon">🚧 Coming Soon 🚧</p>
 </header>
 
 <section class="hero">
   <div class="overlay">
     <h2>Fresh. Healthy. Delicious.</h2>
     <p>Crafted with premium fruits and natural ingredients.</p>
-    <a class="btn" href="#">Order Now</a>
+    <a class="btn" href="mailto:info@thefruitbowlsocial.ca">Contact for More Info</a>
   </div>
 </section>
 
@@ -35,20 +36,17 @@
       <p>Acai, smoothie bowls & more</p>
     </div>
 
-```
-<div class="card">
-  <img src="images/juice.jpg" alt="Juices">
-  <h3>Cold Pressed Juices</h3>
-  <p>Fresh & nutrient-rich</p>
-</div>
-```
-
+    <div class="card">
+      <img src="images/juice.jpg" alt="Juices">
+      <h3>Cold Pressed Juices</h3>
+      <p>Fresh & nutrient-rich</p>
+    </div>
   </div>
 </section>
 
 <section class="contact">
   <h2>Contact</h2>
-  <p>Email us for orders:</p>
+  <p>For more information, reach out to us:</p>
   <a href="mailto:info@thefruitbowlsocial.ca">info@thefruitbowlsocial.ca</a>
 </section>
 
@@ -58,3 +56,110 @@
 
 </body>
 </html>
+
+
+// styles.css
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+header {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.coming-soon {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #d4a373;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('images/fruit-bg.jpg') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.55);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.overlay h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #d4a373;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.about, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.contact a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #2c7a7b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
